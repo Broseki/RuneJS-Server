@@ -180,7 +180,7 @@ export class Player extends Actor {
         playerChunk.addPlayer(this);
 
         this.outgoingPackets.updateCurrentMapChunk();
-        this.outgoingPackets.chatboxMessage('Welcome to RuneJS.');
+        this.outgoingPackets.chatboxMessage('Welcome to RuneScape.');
 
         this.skills.values.forEach((skill, index) =>
             this.outgoingPackets.updateSkill(index, this.skills.getLevel(index), skill.exp));
